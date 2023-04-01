@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Gayathri:wght@700&family=Poppins:wght@500&family=Rubik:wght@300;500&display=swap');
+
+* { /** styling for the whole default html page**/
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif; /** sets the default font style to Open Sans **/
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.logo{ /** styling for the logo div **/
+    margin-top: 135px;
+    text-align: center; /** text aligns to center **/
+}
+
+.logo img{ /** styling for the logo image **/
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+
+nav{
+    background: #00AD8E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 100%;
+    padding: 20px 0;
+}
+
+nav li{
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* The navigation menu links */
+nav a{
+    display: block;
+    padding: 30px 4px;
+    color: rgb(241, 237, 237);
+    font-size: 14px;
+    position: relative;
+ }
+
+.item{
+  padding: 0px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+/* When a certain page is opened or active, indicator */
+nav a.active{
+    color: #0c7db1;
+    background: #D3EDDD;
+    width: 80px;
+}
+
+nav a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+nav a:hover { /* When you mouse over the navigation links, change their color */
+  color: black;
+}
+
+nav a:hover:after { /** transition when being hovered on **/
+  -webkit-animation: circle 1.0s ease-in forwards;
+}
+
+@-webkit-keyframes circle { /** the animtion that will be applied **/
+  0% { /** before the transition started)**/
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #4EB6A4;
+    border-radius: 100%;
+  }
+  100% { /** after 1 second, the animation will be applied**/
+    background: #D3EDDD;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+header {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+
+section{ /** set all the sections with this style **/
+    justify-content: space-around;
+    height: 100vh;
+    margin: 100px;
+}
+
+/** STYLE FOR INDEX.HTML **/
+
+.home{ /** style for home, image served as the background **/
+  margin: 0 auto;
+  width: 100%;
+  background:url('../pics/home.jpg') no-repeat;
+  display: flex;
+  min-height: 100vh;
+
+    /** for the parallax effect**/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content{ /** set to the desired postion of the text **/
+  margin-top: 154px;
+}
+
+.des{ /** set to the desired postion of the text **/
+  margin-top: 575px;
+}
+
+#content1, #content2{ /** style for selected text **/
+  text-align: left;
+  margin-left: 50px;
+  font-size: 95px;
+  font-family: 'Antonio', sans-serif;
+  color: #D3EDDD;
+}
+
+#content3{ /** style for selected text **/
+  text-align: left;
+  margin-left: 50px;
+  font-size: 95px;
+  font-family: 'Antonio', sans-serif;
+  color: #00AD8E;
+}
+
+#content4{ /** style for selected text **/
+  font-size: 95px;
+  font-family: 'Antonio', sans-serif;
+  color: #D3EDDD;
+}
+
+#content1::after{ /** break line **/
+    content: "\a";
+    white-space: pre;
+}
+
+#content2::after{ /** break line **/
+    content: "\a";
+    white-space: pre;
+}
+
+#des1{ /** style for selected text **/
+  font-size: 15px;
+  margin-top: 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#des2{ /** style for selected text **/
+  font-size: 15px;
+  margin-top: 10px;
+  color: #F1B270;
+  font-family: 'Poppins', sans-serif;
+}
+
+#des3{ /** style for selected text **/
+  margin-right: 200px;
+  font-size: 15px;
+  margin-top: 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.what{ /** style for a new section, this also sets the display to flex **/
+  background-color: white;
+  text-align: right;
+  justify-content: all;
+  padding: 0;
+  height:100vh;
+  display: inline-flex;
+}
+
+.content h1{ /** for all the h1 in the content section **/
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size:65px;
+  padding: 0;
+  color: #14223B;
+}
+
+.content p{ /** for all the p in the content section, this justify the text into left **/
+  justify-content: left;
+  margin-left: 230px;
+  text-indent: 75px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.content hr{ /** style for the line **/
+  width: 350px;
+  float: right;
+  margin-top:10px;
+}
+
+.imgcon{ /** sets the height of the imgcon same as the height of the div **/
+  height:100%;
+ margin-left: -120px;
+ margin-top: 180px;
+}
+.imgcon img{ /** set the top-right radius and height **/
+  border-top-right-radius:550px;
+  height:530px;
+}
+
+.act{ /** another div with a height of 90vh **/
+  background-color: white;
+  justify-content: all;
+  padding: 0;
+  height:90vh;
+}
+
+.act h1{ /** style for the h1 in act **/
+  font-size: 65px;
+  margin-left: 50px;
+  color: #14223B;
+}
+
+.act p{ /** style for the p in act **/
+  align-content: center;
+  margin-left: 120px;
+  padding: 10px;
+  text-indent: 30px;
+  font-size: 18px;
+}
+
+.obj{ /** sets the content to center, with a display of flex **/
+  display: flex;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.obj .object{ /** container for each content **/
+  margin: 15px;
+  width: 300px;
+  height: 200px;
+  opacity: 75%;
+}
+
+.obj .object:hover{ /** when hovered the opacity will be 100% **/
+  opacity: 100%;
+}
+
+.object img{ /** all images in object will have 300px as their width **/
+  width: 300px;
+}
+
+.object h6{ /* the design is selected only for the h6 elements in object*/
+  padding-top: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.object h2 { /* the design is selected only for the h2 elements in object*/
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  text-align: left;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+
+.object h2:hover { /** when hovered the color will change **/
+  color: #00AD8E;
+}
+
+.others{ /** styling for the section others **/
+  background-color: white;
+  justify-content: all;
+  padding: 0;
+  height:67vh;
+}
+
+.others h1{ /* the design is selected only for the h1 elements in others*/
+  font-size: 35px;
+  margin-left: 50px;
+  color: #14223B;
+}
+
+.others p{ /* the design is selected only for the p elements in others*/
+  text-align: right;
+  margin-left: 120px;
+  padding: 10px;
+  text-indent: 30px;
+  font-size: 16px;
+}
+
+.others a{ /** styles the a element with an underline **/
+  text-decoration: underline;
+  color: #2D4E8B;
+  margin-left: 530px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.mcf{ /** sets the width of the div **/
+  width: 745px;
+}
+
+.lyv{ /** sets the padding and indention of the div **/
+  padding-top: 65px;
+  text-indent: 700px;
+}
+
+.abt{ /** creates a corner-rounded shape **/
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  background: #7CC0E8;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  height: 45vh;
+}
+
+.abt a{ /** styling of the a element **/
+  font-size: 33px;
+  font-family: 'Poppins', sans-serif;
+  align-content: center;
+  padding-top: 30px;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #14223B;
+  margin-left: 217px;
+}
+
+.abt a:hover{ /** when hovered, it will change its style **/
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #00AD8E;
+}
+
+.abt p{ /** styling of the p (short description below the h1) **/
+  text-align: center;
+  width: 500px;
+  align-content: center;
+  margin-left: 80px;
+}
+
+/** STYLE FOR INDEX.HTML **/
+
+/** STYLE FOR ABOUT.HTML **/
+
+.now{ /** sets the background of the section into black and with 0 margin **/
+  background-color: black;
+  margin: 0;
+}
+
+
+.homeabt img{ /** sets the width of the iamge to 85% of the width of the section **/
+  width: 85%;
+  margin-left: 200px;
+  margin-top: 210px;
+}
+
+.better{ /** sets the height of 50 vh, and flex display **/
+  height: 50vh;
+  display: flex;
+}
+
+.better h1{ /** styling of the h1 elements in better **/
+  font-size: 65px;
+  margin-left: 50px;
+  color: #14223B;
+  font-family: 'Poppins', sans-serif;
+}
+
+.better p{ /** styling of the p elements in better **/
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+}
+
+.not2{ /** sets the height to 50vh **/
+  height: 50vh;
+}
+
+.imgzero1 img{ /** styling for the img, and position it to the right **/
+  width: 500px;
+  border-radius: 500px;
+  float: right;
+  margin-left: 60px;
+}
+
+.imgzero2 img{ /** styling for the img, and position it to the left **/
+  width: 475px;
+  float: left;
+  border-radius: 30px;
+  margin-left: -50px;
+}
+
+.znet p{ /** styling of the p elements in znet **/
+  margin-left: 450px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+}
+
+.change{ /** aligns the text to center and sets the height **/
+  text-align: center;
+  height: 30vh;
+}
+
+.change h1{ /** styling of the h1 elements in change **/
+  font-size: 65px;
+  color: #3E6D65;   
+}
+
+.change h3{ /** styling of the h3 elements in better **/
+  font-size: 30px;
+  margin-left: 220px;
+  color: #4AA292;
+  margin-bottom: 10px;
+}
+
+.a1{ /** sets the display to flex and height of 40vh**/
+  display: flex;
+  height: 40vh;
+}
+
+.a1:hover{ /** when hovered, the styling of background and color will change **/
+  background-color: #D3EDDD;
+  color: #00AD8E; 
+}
+
+.a1text h1{ /** styling of the h1 elements in a1text **/
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 40px;
+  color: #14223B;
+}
+
+.a1text p{ /** styling of the p elements in a1text **/
+  margin-left: 60px;
+  margin-top: 30px;
+  width: 500px;
+  color: #4AA292;
+}
+
+.aimg img{ /** styling of the img elements in a1text **/
+  width: 470px;
+  border-radius: 30px;
+  opacity: 65%;
+}
+
+.aimg img:hover{ /**when hovered, the opacity of the image will be 100% and will have a border **/
+  border: 7px solid #4AA292;
+  opacity: 100%;
+}
+
+.change hr{  /** styling of the line **/
+  width: 890px;
+  margin-top:10px;
+  border: 1px solid black;
+  margin-left: 150px;
+}
+
+.change .light{ /** this text having lighter weight **/
+  margin-top: 12px;
+}
+
+.change .bold{ /** this text having bolder weight **/
+  font-weight: bolder;
+  margin-left: -500px;
+}
+
+/** STYLE FOR ABOUT.HTML **/
+
+/** STYLE FOR CONTACT.HTML **/
+
+.cont{ /** sets the background to black and margin of 0 **/
+  background-color: black;
+  margin: 0;
+}
+
+.cont h1{ /** styling of the h1 elements in cont **/
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  padding-top: 375px;
+}
+
+.mecont{ /** sets the display to flex and height of 70vh **/
+  display: flex;
+  height: 70vh;
+}
+
+.abtme{ /** sets the div height to 500px **/
+  width: 500px;
+}
+
+.abtme h1{ /** styling of the h1 elements in abtme **/
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: 'Gayathri', sans-serif;
+  font-weight: bold;
+}
+
+.abtme h2{ /** styling of the h2 elements in abtme **/
+  text-align: center;
+  font-family: 'Antonio', sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.abtme img{ /** styling of the img elements in abtme **/
+  width: 290px;
+  margin-left: 100px;
+}
+
+.txtme{ /** sets the width to 600px, with a padding of 60px **/
+  width: 600px;
+  padding: 10px;
+}
+
+.txtme h1{ /** styling of the h1 elements in txtme **/
+  font-family: 'Gayathri', sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.txtme p{ /** styling of the p elements in txtme **/
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.refe{ /** sets the left margin to 200px **/
+  margin-left: 200px;
+}
+
+.refe h1{ /** styling of the h1 elements in refe **/
+  font-family: 'Gayathri', sans-serif;
+  font-size: 25px;
+}
+
+.refe a{ /** sets all the a elements in color black **/
+  color: black;
+}
+
+/** STYLE FOR CONTACT.HTML **/
+
+/** STYLE FOR FOOTER **/
+
+footer { /** styling for footer **/
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: black;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  min-height: 30vh;
+  background: black;
+}
+
+.footer-content{ /** styling of the content in footer, justified to left **/
+  margin-left: 800px;
+  justify-content: left;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  font-family: 'Rubik', sans-serifs;
+  font-weight: bolder;
+}
+
+#fw1, #fw3{ /** style for selected text **/
+  color: white;
+}
+
+#fw2{ /** style for selected text **/
+  color: #F1B270;
+}
+
+
+#facebook{ /** sprite images, directed to socmed accs **/
+  background: url('../images/icons.jpg');
+  background-position: -1636px -289px; 
+  width: 122px;
+  height: 122px;
+  margin-left: 500px;
+  zoom:0.20;
+  border-radius: 70px;
+}
+
+#facebook:hover{  /** sprite images, when hovered the picture will change **/
+  background: url('../images/icons.jpg');
+  background-position: -683px -287px; 
+  width: 122px;
+  height: 122px;
+  margin-left: 500px;
+  zoom:0.20;
+  border-radius: 70px;
+}
+
+#instagram{  /** sprite images, directed to socmed accs **/
+  background: url('../images/icons.jpg');
+  background-position: -1635px -429px; 
+  width: 122px;
+  height: 122px;
+  margin-left: 50px;
+  zoom:0.20;
+  border-radius: 70px;
+}
+
+#instagram:hover{ /** sprite images, when hovered the picture will change **/
+  background: url('../images/icons.jpg');
+  background-position: -681px -429px;  
+  width: 122px;
+  height: 122px;
+  margin-left: 50px;
+  zoom:0.20;
+  border-radius: 70px;
+}
+
+#gmail{  /** sprite images, directed to socmed accs **/
+  background: url('../images/icons.jpg');
+  background-position: -1293px -717px; 
+  width: 122px;
+  height: 122px;
+  margin-left: 50px;
+  zoom:0.20;
+  border-radius: 100px;
+}
+
+#gmail:hover{ /** sprite images, when hovered the picture will change **/
+  background: url('../images/icons.jpg');
+  background-position: -341px -717px;  
+  width: 122px;
+  height: 122px;
+  margin-left: 50px;
+  zoom:0.20;
+  border-radius: 100px;
+}
+
+.link{ /** styling for the link div **/
+  font-size: 10px;
+  color: gray;
+  margin-left: 100px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer p{ /** styling for the p elements in footer **/
+  font-size: 12px;
+  text-align: left;
+  color: grey;
+}
+
+/** STYLE FOR FOOTER **/
+
+

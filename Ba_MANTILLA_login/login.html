@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <div class="home">
+    <div class="container">
+        <div class="about">
+            <h2>#ActNOW</h2>
+            <hr>
+			<p>The Earth is covered in greenhouse gas emissions, which trap solar heat. Due to this, the environment is changing and warming up. At this time in recorded history, the planet is warming more quickly than ever. In order to stop climate change on Earth, everyone —children, teenagers, and adults—can make a difference. Even as a student or even as an adult, you can contribute to the project's goal of preventing climate change. We want to support the United Nations' advocacy, which is the "Act Now" campaign. We can change the world by how we travel, how much electricity we use, and what we eat. </p></p>
+            <p>We have a single mission: to protect and hand on the planet to the next generation.</p>
+        </div>
+
+        <div class="login">
+            <form class="form" onsubmit="validate();return false">
+                <div class="logtitle">BE PART OF THE CHANGE!</div>
+                <p class="add">Log-in for more details</p>
+                <div class="input">
+                    <p id="req">required</p>
+                    <label>Username: </label><input id="user"><br>
+                    <div class="password">
+                        <p id="req">required</p>
+                        <label>Password: </label><input type="password" id="pass">
+                        <button id="show" onclick="showp()">show</button>
+                    </div>
+                    <p class="forgot"> 
+                        <a href="#">Forgot password</a>
+                    </p>
+
+                    <div class="error"></div>
+                    <input type="submit" value="Login" class="loginbutton">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+	<footer>
+	    <div class="icons-soc">
+	    	<a href="https://web.facebook.com/annekyle.mantilla">
+	    		<img  id="facebook" src="files/images/img_trans.png" width="1" height="1" onmouseover="sprite()" onmouseout="stopAnimate()">
+	    	</a>
+	    	<a href="https://www.instagram.com/a.kyumi/">
+	    		<img  id="instagram" src="files/images/img_trans.png" width="1" height="1" onmouseover="sprite()" onmouseout="stopAnimate()">
+	    	</a>
+	    	<a href="mailto: annekyle.mantilla@smc.pshs.edu.ph">
+	    		<img  id="gmail" src="files/images/img_trans.png" width="1" height="1" onmouseover="sprite()" onmouseout="stopAnimate()">
+	    	</a>
+	    	<br>
+	    	<a class="link" href="https://www.un.org/actnow">https://www.un.org/actnow</a>
+	    	
+	    </div>
+
+	</footer>
+</body>
+</html>

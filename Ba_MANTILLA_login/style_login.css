@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Gayathri:wght@700&family=Poppins:wght@500&family=Rubik:wght@300;500&display=swap'); 
+
+* { /** styling for the whole default html page**/
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; /** sets the default font style to Open Sans **/
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  margin: 0 auto;
+  width: 100%;
+  background:url('files/pics/home.jpg') no-repeat;
+  min-height: 100vh;
+
+    /** for the parallax effect**/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  float: left;
+  padding: 20px;
+  width: 700px;
+}
+
+.about h2{
+  font-size: 80px;
+  color:#00AD8E;
+}
+
+
+.about p{
+color: black;
+margin-left: 25px;
+text-align: justify;
+margin-top: 50px;
+}
+
+
+.container {
+	background-color: #ffffffa2;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+  width: 1200px;
+  height: 550px;
+  margin: 30px auto;
+  margin-top: 90px;
+  display: flex;
+}
+
+
+.login {
+    background-color: #00AD8E;
+    border-radius: 20px;
+    padding: 10px;
+    color:  white;
+    margin-left: 50px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin-top: -30px;
+    box-shadow: 10px 10px 24px -15px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 24px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 24px -15px rgba(0,0,0,0.75);
+}
+
+.logtitle{
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-weight: bolder;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.add{
+    margin-bottom: 60px;
+    text-align: right;
+    color: black;
+}
+
+#req{
+  font-size: 12px;
+  color: #ffb5b5;
+  margin-left: -75px;
+  font-style: italic;
+}
+
+.loginbutton {
+	margin-top: 40px;
+	padding: 5px;
+	font-size: 15px;
+	width: 100px;
+	color: #00AD8E;
+	margin-bottom: 40px;
+}
+
+input{
+	border: 0;
+  border-radius: 20px;
+	font-size: 20px;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: #00AD8E;
+	font-style: italic;
+	opacity: 50%;
+}
+
+label {
+	padding-right: 7px;
+}
+
+.error{
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+  background-color: #f6fff9;
+  margin-top: 25px;
+  margin-left: 65px;
+  width: 255px;
+  align-items: center;
+}
+
+.forgot a {
+	margin-left: 80px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	font-style: italic;
+}
+
+#user, #pass {
+	border: solid 2px white;
+	padding: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	color: #00AD8E;
+  margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+
+#user:hover{
+	border:solid 2px #ebe5cc;
+	background-color: #2f6d5d;
+  color: white;
+}
+
+#pass:hover{
+	border:solid 2px #ebe5cc;
+	background-color: #2f6d5d;
+  color: white;
+}
+
+.password {
+	position: relative;
+}
+
+#show{
+	position: absolute;
+	top: 50%;
+  right: 1px;
+	width: 1.5px;
+	display: flex;
+	align-items: center;
+	background: none;
+	border: none;	
+	padding-right: 35px;
+	font-size: 12px;
+	color: #b4fff1;
+  opacity: 100%;
+}
+
+footer { /** styling for footer **/
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: black;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  min-height: 30vh;
+  background: black;
+}
+
+#fw1{ /** style for selected text **/
+  color: white;
+}
+
+#fw2{ /** style for selected text **/
+  color: #F1B270;
+}
+
+#facebook{ /** sprite images, directed to socmed accs **/
+  background: url('files/images/icons.jpg');
+  background-position: -1636px -289px; 
+  width: 122px;
+  height: 122px;
+  margin-left: 500px;
+  zoom:0.20;
+  border-radius: 70px;
+  margin-top: 350px;
+}
+
+#instagram{  /** sprite images, directed to socmed accs **/
+  background: url('files/images/icons.jpg');
+  background-position: -1635px -429px; 
+  width: 122px;
+  height: 122px;
+  margin-left: 50px;
+  zoom:0.20;
+  border-radius: 70px;
+  margin-top: 350px;
+}
+
+#gmail{  /** sprite images, directed to socmed accs **/
+  background: url('files/images/icons.jpg');
+  background-position: -1293px -717px; 
+  width: 122px;
+  height: 122px;
+  margin-left: 50px;
+  zoom:0.20;
+  border-radius: 100px;
+  margin-top: 350px;
+}
+
+.link{ /** styling for the link div **/
+  font-size: 10px;
+  color: gray;
+  margin-left: 100px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer p{ /** styling for the p elements in footer **/
+  font-size: 12px;
+  text-align: left;
+  color: grey;
+}
+
+/** STYLE FOR FOOTER **/
