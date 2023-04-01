@@ -17,29 +17,32 @@ function validate(){
   var user = document.querySelector("#user");
   var pass = document.querySelector("#pass");
   var fail = document.querySelector(".error");
+  var error = "Log-in Error.";
+  var success = "Successful Log-In";
 
    if (user.value.length == 0 && pass.value.length != 0)
     { 
       fail.innerHTML = "Please enter your username."; 
-      console.log = "Log-in Error.";
+      console.log(error);
     } 
   
     if (user.value.length != 0 && pass.value.length == 0)
     { 
       fail.innerHTML = "Please enter your password.";
-      console.log = "Log-in Error.";
+      console.log(error);
     } 
     
     if (user.value.length == 0 && pass.value.length == 0)
     { 
       fail.innerHTML = "Please fill in a valid value for all required fields.";
-      console.log = "Log-in Error.";
+      console.log(error);
     } 
 
     if (user.value.length != 0 && pass.value.length != 0)
     { 
       fail.innerHTML = ""; 	
       window.location.href = "files/index.html";
+      console.log(success);
     }
 }
 
